@@ -1,0 +1,55 @@
+
+body {
+padding: 0;
+margin: 0;
+overflow-wrap: break-word;
+font-family: sans-serif;
+}
+
+.form {
+background-color: rgb(168, 155, 135);
+width: 380px;
+height: 350px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #d4a849;
+border-radius: 20px;
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border:1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37)
+}
+
+.email {
+position: relative;
+width: 320px;
+height: 40px;
+bottom: 20px;
+border-radius: 15px;
+border: solid 1px;
+}
+
+.password {
+position: relative;
+width: 320px;
+height: 40px;
+border-radius: 15px;
+border: solid 1px;
+}
+
+.sendbutton {
+position: relative;
+width: 320px;
+height: 50px;
+top: 20px;
+border-radius: 15px;
+border: solid 1px;
+}
