@@ -7,6 +7,7 @@ font-family: sans-serif;
 }
 
 .form {
+z-index: 1000;
 background-color: rgb(168, 155, 135);
 width: 380px;
 height: 350px;
@@ -18,31 +19,60 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-background-color: #d4a849;
 border-radius: 20px;
 background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 border-radius: 20px;
 border:1px solid rgba(255, 255, 255, 0.18);
-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37)
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.logintext {
+position: relative;
+bottom: 50px;
+padding: 0;
+font-size: 30px;
+font-weight: 700;
+color: #ffffff;
 }
 
 .email {
+outline: 0;
 position: relative;
 width: 320px;
 height: 40px;
-bottom: 20px;
+bottom: 40px;
 border-radius: 15px;
-border: solid 1px;
+border: none;
+font-size: 18px;
+font-weight: 500;
+text-indent: 10px;
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border:1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .password {
+outline: 0;
 position: relative;
 width: 320px;
 height: 40px;
 border-radius: 15px;
-border: solid 1px;
+border: none;
+font-size: 18px;
+font-weight: 500;
+text-indent: 10px;
+bottom: 10px;
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border:1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .sendbutton {
@@ -51,5 +81,135 @@ width: 320px;
 height: 50px;
 top: 20px;
 border-radius: 15px;
-border: solid 1px;
+border: none;
+font-size: 26px;
+font-weight: 700;
+background-color: #4c00b0;
+color: #ffffff;
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
+
+.video {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    position: absolute;
+    object-fit: cover;
+}
+
+
+
+/* Animações */
+
+
+.email:hover {
+    position: relative;
+    width: 340px;
+    height: 40px;
+    bottom: 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-indent: 10px;
+    transition: all 0.3s;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+.password:hover {
+    position: relative;
+    width: 340px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-indent: 10px;
+    transition: all 0.3s;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    
+.sendbutton:hover {
+    position: relative;
+    width: 330px;
+    height: 50px;
+    top: 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 26px;
+    font-weight: 700;
+    transition: all 0.3s;
+    background-color: #4c00b0;
+    color: #ffffff;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+}
+
+/* Welcome Page */
+
+.welcome {
+position: relative;
+padding: 0;
+font-size: 60px;
+font-weight: 700;
+color: #ffffff;
+}
+
+.quit {
+width: 150px;
+height: 30px;
+position: fixed;
+color: #ffffff;
+font-size: 18px;
+font-weight: 500;
+display: flex;
+justify-content: center;
+align-items: center;
+left: 1200px;
+top: 20px;
+z-index: 5;
+border: 1px solid;
+border-radius: 20px;
+background: none;
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.quit:hover {
+    scale: 1.1;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 150px;
+    height: 30px;
+    position: fixed;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 1200px;
+    top: 20px;
+    z-index: 5;
+    border: 1px solid;
+    border-radius: 20px;
+    background: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
