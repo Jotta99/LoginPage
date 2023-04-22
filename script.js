@@ -3,8 +3,8 @@ function logar () {
     var email = document.querySelector('.email').value;
     var password = document.querySelector('.password').value;
 
-    if(email === 'joasamorim611@gmail.com' && password === '12345678') {
-        window.location.href = "passedlogin.html";
+    if(email === 'admin' && password === 'admin') {
+        location.href = "passedlogin.html";
     }
 }
 
