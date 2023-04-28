@@ -6,6 +6,9 @@ function logar () {
     if(email === 'admin' && password === 'admin') {
         location.href = "passedlogin.html";
     }
+    else {
+        window.alert ('O usuário e a senha são admin');
+    }
 }
 
 
